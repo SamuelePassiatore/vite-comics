@@ -26,39 +26,45 @@ export default {
             <div class="container">
                 <div class="main-list">
                     <ul>
-                        <li class="title-list">DC COMICS</li>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movie</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
-                        <li class="title-list">SHOP</li>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collections</li>
+                        <li>
+                            <a href="#" class="title-list">DC COMICS</a>
+                            <a href="#">Characters</a>
+                            <a href="#">Comics</a>
+                            <a href="#">Movie</a>
+                            <a href="#">TV</a>
+                            <a href="#">Games</a>
+                            <a href="#">Videos</a>
+                            <a href="#">News</a>
+                            <a href="#" class="title-list">SHOP</a>
+                            <a href="#">Shop DC</a>
+                            <a href="#">Shop DC Collections</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li class="title-list">DC</li>
-                        <li>Terms of use</li>
-                        <li>Privacy policy (New)</li>
-                        <li>Ad choices</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscriptions</li>
-                        <li>Talent Workshop</li>
-                        <li>CPSC Certificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Help</li>
-                        <li>Contact Us</li>
+                        <li>
+                            <a href="#" class="title-list">DC</a>
+                            <a href="#">Terms of use</a>
+                            <a href="#">Privacy policy (New)</a>
+                            <a href="#">Ad choices</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">Subscriptions</a>
+                            <a href="#">Talent Workshop</a>
+                            <a href="#">CPSC Certificates</a>
+                            <a href="#">Ratings</a>
+                            <a href="#">Shop Help</a>
+                            <a href="#">Contact Us</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li class="title-list">SITES</li>
-                        <li>DC</li>
-                        <li>MAD Magazine</li>
-                        <li>DC Kids</li>
-                        <li>DC Universe</li>
-                        <li>DC Power Visa</li>
+                        <li>
+                            <a href="#" class="title-list">SITES</a>
+                            <a href="#">DC</a>
+                            <a href="#">MAD Magazine</a>
+                            <a href="#">DC Kids</a>
+                            <a href="#">DC Universe</a>
+                            <a href="#">DC Power Visa</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="main-img"></div>
@@ -102,18 +108,21 @@ export default {
 }
 
 .main-bottom .main-list ul {
-    display: flex;
-    flex-direction: column;
     padding: 0 15px;
 }
 
-.main-bottom li {
+.main-bottom .main-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-bottom a {
     color: grey;
     font-size: 13px;
     padding: 2px;
 }
 
-.main-bottom li.title-list {
+.main-bottom a.title-list {
     font-size: 20px;
     color: white;
     text-transform: uppercase;
