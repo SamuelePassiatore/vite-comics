@@ -19,7 +19,32 @@ export default {
         </div>
 
         <div class="main-center">
-
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../assets/img/buy-comics-digital-comics.png" alt="digital">
+                            <span>DIGITAL COMICS</span>
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/buy-comics-merchandise.png" alt="digital">
+                            <span>DC MERCHANDISE</span>
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/buy-comics-subscriptions.png" alt="digital">
+                            <span>SUBSCRIPTION</span>
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/buy-comics-shop-locator.png" alt="digital">
+                            <span>COMIC SHOP LOCATOR</span>
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img/buy-dc-power-visa.svg" alt="digital">
+                            <span>DC POWER VISA</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="main-bottom">
@@ -86,6 +111,36 @@ export default {
 .main-center {
     min-height: 120px;
     background-color: dodgerblue;
+
+    ul {
+        line-height: 120px;
+    }
+
+    li,
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        flex-basis: calc(100% / 5);
+
+        img {
+            width: 50px;
+            padding-right: 15px;
+        }
+
+        span {
+            color: white;
+            font-size: 13px;
+
+            &:hover {
+                text-shadow: 1px 0 10px white;
+            }
+        }
+
+    }
 }
 
 /* Main bottom */
