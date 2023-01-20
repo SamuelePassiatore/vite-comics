@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.14",
+    "@fontsource/open-sans-condensed": "^4.5.5",
     "vue": "^3.2.45"
   },
   "devDependencies": {

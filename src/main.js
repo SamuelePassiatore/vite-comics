@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
+import "@fontsource/open-sans"
+import "@fontsource/open-sans-condensed"
 import './style.css'
 import App from './App.vue'
 

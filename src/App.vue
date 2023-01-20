@@ -29,6 +29,15 @@ body {
   min-height: 100vh;
 }
 
+header {
+  font-family: "Open Sans", sans-serif;
+}
+
+main,
+footer {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;

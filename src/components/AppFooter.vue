@@ -61,6 +61,7 @@ footer .container {
     color: dodgerblue;
     font-weight: bold;
     padding: 0 20px;
+    cursor: pointer;
 }
 
 .footer-icons .footer-social li {
