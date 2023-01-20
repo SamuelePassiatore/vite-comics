@@ -11,11 +11,16 @@ export default {
 <template>
     <footer>
         <div class="container">
+            <!-- Footer button -->
             <div class="footer-button"><button>SIGN-UP NOW!</button></div>
+            <!-- Footer icons -->
             <div class="footer-icons">
+                <!-- Footer icons text -->
                 <div class="footer-text">FOLLOW US</div>
+                <!-- Footer icons social -->
                 <div class="footer-social">
                     <ul>
+                        <!-- Images -->
                         <li>
                             <a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a>
                             <a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a>
@@ -30,19 +35,21 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// Footer
 footer {
     min-height: 100px;
     background-color: #303030;
+
+    .container {
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-footer .container {
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    align-items: center;
-}
-
+// Footer button
 .footer-button button {
     padding: 10px 10px;
     background-color: transparent;
@@ -51,24 +58,33 @@ footer .container {
     cursor: pointer;
 }
 
+button:hover {
+    box-shadow: inset 1px 0 10px dodgerblue;
+}
+
+// Footer icons
 .footer-icons {
     display: flex;
-}
 
-.footer-icons .footer-text {
-    display: flex;
-    align-items: center;
-    color: dodgerblue;
-    font-weight: bold;
-    padding: 0 20px;
-    cursor: pointer;
-}
+    .footer-text {
+        display: flex;
+        align-items: center;
+        color: dodgerblue;
+        font-weight: bold;
+        padding: 0 20px;
+        cursor: pointer;
+    }
 
-.footer-icons .footer-social li {
-    display: flex;
-}
+    .footer-text:hover {
+        text-shadow: 1px 0 10px dodgerblue;
+    }
 
-.footer-icons .footer-social li img {
-    padding: 0 5px;
+    .footer-social li {
+        display: flex;
+
+        img {
+            padding: 0 5px;
+        }
+    }
 }
 </style>

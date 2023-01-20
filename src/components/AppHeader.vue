@@ -62,9 +62,11 @@ export default {
 
 <template>
     <header class="container">
+        <!-- Image -->
         <figure>
             <a href="#"><img src="../assets/img/dc-logo.png" alt="logo"></a>
         </figure>
+        <!-- Nav -->
         <nav>
             <ul>
                 <li v-for="section in sections" :key="section.text">
@@ -77,42 +79,43 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// Header
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 100px;
+
+    img {
+        height: 70px;
+    }
 }
 
-header img {
-    height: 70px;
-}
-
+// Nav
 ul {
     display: flex;
     padding: 0;
-}
 
+    li {
+        text-transform: uppercase;
+        font-weight: bold;
 
-ul li {
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        a {
+            color: #303030;
+            font-size: 11px;
+            padding: 10px;
+        }
 
-ul li a {
-    color: #303030;
-    font-size: 11px;
-    padding: 10px;
-}
+        a:hover {
+            color: dodgerblue;
+        }
 
-ul li a:hover {
-    color: dodgerblue;
-}
-
-ul li a.current {
-    color: dodgerblue;
-    border-bottom: 5px solid dodgerblue;
-    padding-bottom: 37px;
+        a.current {
+            color: dodgerblue;
+            border-bottom: 5px solid dodgerblue;
+            padding-bottom: 37px;
+        }
+    }
 }
 </style>

@@ -73,7 +73,7 @@ export default {
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Main top */
 .main-top {
     min-height: 100px;
@@ -94,48 +94,58 @@ export default {
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-}
 
-.main-bottom .container {
-    display: flex;
-}
+    .container {
+        display: flex;
+    }
 
-/* Main bottom list */
-.main-bottom .main-list {
-    flex-basis: 50%;
-    display: flex;
-    padding: 20px 0;
-}
+    // Main List
+    .main-list {
+        flex-basis: 50%;
+        display: flex;
+        padding: 20px 0;
 
-.main-bottom .main-list ul {
-    padding: 0 15px;
-}
+        ul {
+            padding: 0 15px;
 
-.main-bottom .main-list li {
-    display: flex;
-    flex-direction: column;
-}
+            li {
+                display: flex;
+                flex-direction: column;
 
-.main-bottom a {
-    color: grey;
-    font-size: 13px;
-    padding: 2px;
-}
+                a {
+                    color: grey;
+                    font-size: 13px;
+                    padding: 2px;
+                }
 
-.main-bottom a.title-list {
-    font-size: 20px;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 0;
-}
+                a:hover {
+                    color: white;
+                }
 
-/* Main bottom img */
-.main-bottom .main-img {
-    flex-basis: 50%;
-    min-height: 300px;
-    background-image: url('../assets/img/dc-logo-bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+                a.title-list {
+                    font-size: 20px;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 10px 0;
+                }
+
+                a.title-list:hover {
+                    text-shadow: 1px 0 10px white;
+                }
+
+
+            }
+        }
+    }
+
+    // Main img
+    .main-img {
+        flex-basis: 50%;
+        min-height: 300px;
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 </style>
