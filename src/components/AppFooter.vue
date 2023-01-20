@@ -36,16 +36,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/mixins' as *;
+@use '../assets/scss/variables' as *;
+
 // Footer
 footer {
     min-height: 100px;
-    background-color: #303030;
+    background-color: $dark-grey;
 
     .container {
-        display: flex;
+        @include flex-center;
         height: 100px;
-        justify-content: space-between;
-        align-items: center;
     }
 }
 
@@ -56,10 +57,10 @@ footer {
     color: white;
     border-color: dodgerblue;
     cursor: pointer;
-}
 
-button:hover {
-    box-shadow: inset 1px 0 10px dodgerblue;
+    &:hover {
+        box-shadow: inset 1px 0 10px dodgerblue;
+    }
 }
 
 // Footer icons
@@ -73,10 +74,10 @@ button:hover {
         font-weight: bold;
         padding: 0 20px;
         cursor: pointer;
-    }
 
-    .footer-text:hover {
-        text-shadow: 1px 0 10px dodgerblue;
+        &:hover {
+            text-shadow: 1px 0 10px dodgerblue;
+        }
     }
 
     .footer-social li {

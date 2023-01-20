@@ -116,10 +116,10 @@ export default {
                     color: grey;
                     font-size: 13px;
                     padding: 2px;
-                }
 
-                a:hover {
-                    color: white;
+                    &:hover {
+                        color: white;
+                    }
                 }
 
                 a.title-list {
@@ -127,13 +127,11 @@ export default {
                     color: white;
                     text-transform: uppercase;
                     padding: 10px 0;
+
+                    &:hover {
+                        text-shadow: 1px 0 10px white;
+                    }
                 }
-
-                a.title-list:hover {
-                    text-shadow: 1px 0 10px white;
-                }
-
-
             }
         }
     }

@@ -79,12 +79,14 @@ export default {
     </header>
 </template>
 
+
 <style lang="scss" scoped>
+@use '../assets/scss/mixins' as *;
+@use '../assets/scss/variables' as *;
+
 // Header
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-center;
     min-height: 100px;
 
     img {
@@ -102,19 +104,19 @@ ul {
         font-weight: bold;
 
         a {
-            color: #303030;
+            color: $dark-grey;
             font-size: 11px;
             padding: 10px;
-        }
 
-        a:hover {
-            color: dodgerblue;
-        }
+            &:hover {
+                color: dodgerblue;
+            }
 
-        a.current {
-            color: dodgerblue;
-            border-bottom: 5px solid dodgerblue;
-            padding-bottom: 37px;
+            &.current {
+                color: dodgerblue;
+                border-bottom: 5px solid dodgerblue;
+                padding-bottom: 37px;
+            }
         }
     }
 }
