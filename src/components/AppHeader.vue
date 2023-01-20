@@ -67,8 +67,10 @@ export default {
         </figure>
         <nav>
             <ul>
-                <li v-for="section in sections" :key="section.text"><a href="#" :class="{ current: section.current }">
-                        {{ section.text }} </a>
+                <li v-for="section in sections" :key="section.text">
+                    <a href="#" :class="{ current: section.current }">
+                        {{ section.text }}
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -80,7 +82,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
 }
 
 header img {
@@ -95,7 +97,6 @@ ul {
 
 ul li {
     text-transform: uppercase;
-    list-style-type: none;
     font-weight: bold;
 }
 

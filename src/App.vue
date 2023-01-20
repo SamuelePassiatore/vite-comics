@@ -1,15 +1,16 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
+import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 export default {
   name: 'Dc comics',
-  components: { AppHeader }
+  components: { AppHeader, AppMain }
 }
 </script>
 
 <template>
 
   <app-header></app-header>
-  <main></main>
+  <app-main></app-main>
   <footer></footer>
 
 </template>
@@ -33,9 +34,14 @@ img {
   display: block;
 }
 
+li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
+
 
 /* Utils */
 .container {
