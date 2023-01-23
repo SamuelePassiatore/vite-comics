@@ -203,6 +203,8 @@ export default {
         padding: 5px 10px;
         font-size: 18px;
         text-transform: uppercase;
+        position: relative;
+        bottom: 38px;
     }
 
     .card-container {
