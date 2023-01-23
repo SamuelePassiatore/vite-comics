@@ -1,8 +1,9 @@
 <script>
 import SeriesCard from './SeriesCard.vue'
+import AppButton from './AppButton.vue'
 export default {
     name: 'App Main',
-    components: { SeriesCard },
+    components: { SeriesCard, AppButton },
     data() {
         return {
             text: 'CURRENT SERIES',
@@ -105,7 +106,9 @@ export default {
                 <div class="card-container">
                     <series-card v-for="card in cards" :key="card.series" :card="card"></series-card>
                 </div>
-                <div class="button"><button>LOAD MORE</button></div>
+                <div class="button">
+                    <app-button text="Load More"></app-button>
+                </div>
             </div>
         </div>
 
@@ -195,7 +198,7 @@ export default {
     min-height: 100px;
     background-color: #1C1C1C;
     color: white;
-    padding: 20px 0;
+    padding-bottom: 20px;
 
     h2 {
         display: inline-block;
@@ -204,7 +207,7 @@ export default {
         font-size: 18px;
         text-transform: uppercase;
         position: relative;
-        bottom: 38px;
+        bottom: 18px;
     }
 
     .card-container {
