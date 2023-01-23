@@ -1,6 +1,8 @@
 <script>
+import HeaderJumbotron from './HeaderJumbotron.vue';
 export default {
     name: 'App Header',
+    components: { HeaderJumbotron },
     data() {
         return {
             sections: [
@@ -77,6 +79,7 @@ export default {
             </ul>
         </nav>
     </header>
+    <header-jumbotron></header-jumbotron>
 </template>
 
 
