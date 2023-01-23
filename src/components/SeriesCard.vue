@@ -19,7 +19,8 @@ export default {
     flex-basis: calc(100% / 6);
     padding: 15px;
     position: relative;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 1s;
+    cursor: pointer;
 
     &:hover {
         box-shadow: inset 1px 0 10px white;
@@ -27,6 +28,8 @@ export default {
 
     img {
         display: block;
+        height: 140px;
+        width: 140px;
     }
 
     h6 {
