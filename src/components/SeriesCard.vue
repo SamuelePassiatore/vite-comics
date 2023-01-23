@@ -18,6 +18,12 @@ export default {
 .series-card {
     flex-basis: calc(100% / 6);
     padding: 15px;
+    position: relative;
+    transition: box-shadow 0.5s;
+
+    &:hover {
+        box-shadow: inset 1px 0 10px white;
+    }
 
     img {
         display: block;
